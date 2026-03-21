@@ -793,14 +793,27 @@ NARRATIVE & STRUCTURE PLAN:
             });
 
             // Revenue Pie
-            new Chart(document.getElementById('revenuePieChart').getContext('2d'), {
-                type: 'doughnut',
-                data: {
-                    labels: ['OEM 및 PB 제품 판매 (70%)', '플랫폼 서비스 구독료 (15%)', '광고 및 수수료 (15%)'],
-                    datasets: [{ data: [70, 15, 15], backgroundColor: ['#00A99D', '#004A7C', '#FF6B6B'], borderWidth: 0, hoverOffset: 15 }]
-                },
-                options: { maintainAspectRatio: false, cutout: '75%', plugins: { legend: { position: 'bottom', labels: { padding: 25, font: { weight: 'bold' } } } } }
-            });
+             const revCanvas = document.getElementById('revenuePieChart');
+            if (revCanvas) {
+                new Chart(revCanvas.getContext('2d'), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['OEM 및 PB 제품 판매 (70%)', '도매 유통 사업 (5%)', '플랫폼 서비스 구독료 (10%)', '배너광고 및 기타 수수료 (15%)'],
+                        datasets: [{
+                            data: [70, 5, 10, 15],
+                            backgroundColor: ['#00A99D', '#FFD166', '#004A7C', '#FF6B6B'],
+                            borderWidth: 2,
+                            borderColor: '#ffffff',
+                            hoverOffset: 15
+                        }]
+                    },
+                    options: { 
+                        maintainAspectRatio: false, 
+                        cutout: '75%', 
+                        plugins: { legend: { position: 'bottom', labels: { padding: 25, font: { weight: 'bold', size: 11 } } } } 
+                    }
+                });
+            }
 
             // Goal Chart
             new Chart(document.getElementById('growthComboChart').getContext('2d'), {
