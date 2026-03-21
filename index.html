@@ -603,23 +603,116 @@ NARRATIVE & STRUCTURE PLAN:
                     <div id="kioskPlotly" class="w-full h-[400px]"></div>
                 </div>
             </section>
-            <!-- 👔 10. ORGANIZATION SECTION -->
-            <section id="section-org" class="hidden-section p-8 lg:p-16 max-w-6xl mx-auto space-y-12 text-center text-brand-text">
-                <h2 class="text-3xl font-black text-brand-navy">10. 셀코디 조직 운영</h2>
-                <div class="org-node w-80 mx-auto mb-10 bg-brand-navy text-white py-6 shadow-2xl">
-                    <div class="text-xl font-black text-brand-yellow">황지상 <span class="text-sm font-normal text-white">약학박사</span></div>
-                    <div class="text-[10px] mt-1 font-bold">셀코디 대표 / 총괄 경영 / 학술</div>
+             <!-- 👔 10. ORGANIZATION (UPDATED WITH PROFESSIONAL R&R) -->
+            <section id="section-org" class="hidden-section p-8 lg:p-16 max-w-7xl mx-auto space-y-16 text-brand-text">
+                <div class="text-center space-y-4">
+                    <div class="inline-block px-4 py-1 rounded-full bg-brand-navy text-white text-[10px] font-black tracking-widest uppercase">Organizational Excellence</div>
+                    <h2 class="text-4xl md:text-5xl font-black text-brand-navy leading-tight">10. 셀코디 조직 운영 및 R&R</h2>
+                    <p class="text-xl text-brand-textLight">약학 전문성과 혁신 기술이 융합된 각 분야 최고 전문가들이 시너지를 창출합니다.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div class="org-node"><div class="text-xs font-bold text-brand-teal">박** 약사</div><div class="text-[10px] font-black text-brand-navy">전략기획본부장</div></div>
-                    <div class="org-node"><div class="text-xs font-bold text-brand-teal">신**</div><div class="text-[10px] font-black text-brand-navy">기술연구소장</div></div>
-                    <div class="org-node"><div class="text-xs font-bold text-brand-teal">김**</div><div class="text-[10px] font-black text-brand-navy">영업사업본부장</div></div>
-                    <div class="org-node"><div class="text-xs font-bold text-brand-teal">김**</div><div class="text-[10px] font-black text-brand-navy">유통물류본부장</div></div>
+
+                <!-- CEO Section -->
+                <div class="flex justify-center mb-12">
+                    <div class="org-node w-full max-w-xl bg-brand-navy text-white p-10 shadow-2xl border-none relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-10 opacity-5 font-black text-8xl text-white">CEO</div>
+                        <div class="text-xs font-bold text-brand-yellow uppercase tracking-widest mb-2">Chief Executive Officer</div>
+                        <div class="text-4xl font-black mb-4">황지상 <span class="text-lg font-normal ml-2">약학박사</span></div>
+                        <div class="text-left space-y-3 mt-8 pt-8 border-t border-white/20">
+                            <p class="text-sm flex items-start"><span class="text-brand-teal mr-3 font-bold">▶</span> <strong>전사 비전 수립:</strong> 지속 가능한 약국 생태계 구축을 위한 장기 비전 및 미션 수립</p>
+                            <p class="text-sm flex items-start"><span class="text-brand-teal mr-3 font-bold">▶</span> <strong>사업 총괄 경영:</strong> 대내외 비즈니스 포트폴리오 관리 및 전사적 의사결정 총괄</p>
+                            <p class="text-sm flex items-start"><span class="text-brand-teal mr-3 font-bold">▶</span> <strong>학술 고도화 진두지휘:</strong> 약학 빅데이터를 활용한 독자적 학술/임상 로직 고도화 총괄</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Division Grid (5 Columns) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+                    <!-- 전략기획본부 -->
+                    <div class="bg-white rounded-3xl p-8 border-t-8 border-brand-teal shadow-card hover:shadow-xl transition-all flex flex-col">
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-black text-brand-navy">전략기획본부</h4>
+                            <span class="text-3xl">📊</span>
+                        </div>
+                        <p class="text-brand-teal font-bold text-sm mb-4">박** 본부장 (약사)</p>
+                        <div class="text-left space-y-4 pt-4 border-t border-slate-100 flex-grow">
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 사업 전략:</strong> 중장기 사업 고도화 및 핵심 KPI 관리</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• IR (투자유치):</strong> 투자자 커뮤니케이션 및 재무 건전성 확보</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• HR & 법무:</strong> 핵심 인재 영입 시스템 구축 및 리스크/법무 관리</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 경영 지원:</strong> 전사 데이터 기반 의사결정 지원 인프라 구축</p>
+                        </div>
+                    </div>
+
+                    <!-- 기술연구소 -->
+                    <div class="bg-white rounded-3xl p-8 border-t-8 border-brand-navy shadow-card hover:shadow-xl transition-all flex flex-col">
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-black text-brand-navy">기술연구소</h4>
+                            <span class="text-3xl">💻</span>
+                        </div>
+                        <p class="text-brand-navy font-bold text-sm mb-4">신** 소장</p>
+                        <div class="text-left space-y-4 pt-4 border-t border-slate-100 flex-grow">
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• SaaS 아키텍처:</strong> 팜셀매니저 시스템 설계 및 확장성 최적화</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 원천 기술 개발:</strong> AI 기반 OCR 엔진 및 분석 알고리즘 고도화</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• UI/UX 최적화:</strong> 약사/소비자용 앱 사용자 경험 고도화</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 보안 인프라:</strong> 의료 데이터 보안 표준 준수 및 서버 안정성 관리</p>
+                        </div>
+                    </div>
+
+                    <!-- 영업사업본부 -->
+                    <div class="bg-white rounded-3xl p-8 border-t-8 border-brand-coral shadow-card hover:shadow-xl transition-all flex flex-col">
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-black text-brand-navy">영업사업본부</h4>
+                            <span class="text-3xl">🤝</span>
+                        </div>
+                        <p class="text-brand-coral font-bold text-sm mb-4">김** 본부장</p>
+                        <div class="text-left space-y-4 pt-4 border-t border-slate-100 flex-grow">
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 채널 확장:</strong> 전국 5대 거점 지사망 확장 및 가맹 관리</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• B2B 파트너십:</strong> 세무/제약/체인 약국 파트너십 영업 총괄</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• CRM/CS:</strong> 회원 약국 정착 지원 및 시스템 설치 가속화</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 마케팅 행사:</strong> 팜엑스포 및 연수교육 등 대외 홍보 기획</p>
+                        </div>
+                    </div>
+
+                    <!-- 유통물류본부 -->
+                    <div class="bg-white rounded-3xl p-8 border-t-8 border-brand-yellow shadow-card hover:shadow-xl transition-all flex flex-col">
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-black text-brand-navy">유통물류본부</h4>
+                            <span class="text-3xl">📦</span>
+                        </div>
+                        <p class="text-amber-600 font-bold text-sm mb-4">김** 본부장</p>
+                        <div class="text-left space-y-4 pt-4 border-t border-slate-100 flex-grow">
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• PB 제품 소싱:</strong> 독자 라인업 기획 및 제조 파트너(NPK 등) 관리</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 품질 관리 (QC):</strong> 전용 제품의 효능 및 법적 규격 관리 총괄</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• OEM 협상:</strong> 제조 단가 최적화 및 공급 계약 전략 수립</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• SCM 최적화:</strong> 전국 다이렉트 물류망 구축 및 수급 안정성 확보</p>
+                        </div>
+                    </div>
+
+                    <!-- 업무지원본부 (New) -->
+                    <div class="bg-white rounded-3xl p-8 border-t-8 border-slate-400 shadow-card hover:shadow-xl transition-all flex flex-col">
+                        <div class="flex justify-between items-start mb-6">
+                            <h4 class="text-xl font-black text-brand-navy">업무지원본부</h4>
+                            <span class="text-3xl">⚙️</span>
+                        </div>
+                        <p class="text-slate-500 font-bold text-sm mb-4">이** 본부장</p>
+                        <div class="text-left space-y-4 pt-4 border-t border-slate-100 flex-grow">
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 업무 조율:</strong> 본부 간 유기적 협력을 위한 프로세스 큐레이션</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 경영 지원:</strong> 전사 행정, 총무 및 운영 고정비용 관리</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 정책 지원:</strong> 사내 업무 매뉴얼 구축 및 성과 지표 가이드라인 제공</p>
+                            <p class="text-xs text-brand-textLight leading-relaxed"><strong>• 인프라 관리:</strong> 쾌적한 연구 및 업무 환경 조성과 전산 자산 관리</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-slate-100 p-8 rounded-3xl border border-slate-200">
+                    <p class="text-sm text-center text-brand-textLight italic font-medium">
+                        "각 본부의 수직적 전문성과 부서 간 수평적 협업이 조화를 이루어 약국 경영의 디지털 패러다임을 완성합니다."
+                    </p>
                 </div>
             </section>
 
         </main>
     </div>
+
 
     <script>
         function showSection(sectionId) {
