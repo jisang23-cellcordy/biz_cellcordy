@@ -325,22 +325,83 @@ NARRATIVE & STRUCTURE PLAN:
                 </div>
             </section>
 
-            <!-- 🌐 05. O2O ECOSYSTEM -->
+            <!-- 🌐 05. O2O ECOSYSTEM (FULL UPDATE AS REQUESTED) -->
             <section id="section-ecology" class="hidden-section p-8 lg:p-16 max-w-6xl mx-auto space-y-16">
-                <div class="space-y-4 text-center">
-                    <div class="inline-block px-4 py-1 rounded-full bg-brand-teal/10 text-brand-teal text-[10px] font-black tracking-widest uppercase">Connectivity & Synergy</div>
-                    <h2 class="text-4xl md:text-5xl font-black text-brand-navy">05. O2O 생태계 모델</h2>
-                    <p class="text-xl text-brand-textLight max-w-4xl mx-auto leading-relaxed">웹과 앱의 <strong>실시간 연동</strong>을 통해 소비자와 약국을 더 끈끈하게 연결합니다.</p>
+                <div class="space-y-6 text-center">
+                    <div class="inline-block px-4 py-1 rounded-full bg-brand-teal/10 text-brand-teal text-[10px] font-black tracking-widest uppercase">The Loop of Trust</div>
+                    <h2 class="text-4xl md:text-5xl font-black text-brand-navy leading-tight">05. O2O 생태계 모델</h2>
+                    <p class="text-xl text-brand-textLight max-w-4xl mx-auto leading-relaxed">
+                        웹과 앱의 <strong>실시간 연계</strong>를 통해 소비자와 약국을 데이터로 연결하고,<br>
+                        Online to Offline 전략으로 <strong>단골약국 활성화를 통한 동네약국 생태계</strong>를 형성합니다.
+                    </p>
                 </div>
-                <div class="p-10 md:p-16 bg-white rounded-[40px] shadow-card border border-slate-100">
-                    <div class="flex flex-col md:flex-row items-stretch gap-4 text-center">
-                        <div class="flex-1 bg-brand-navy text-white p-8 rounded-3xl space-y-4 shadow-xl relative"><div class="text-4xl">🧠</div><h4 class="font-black text-brand-yellow">팜셀매니저</h4><p class="text-[10px] opacity-80 leading-relaxed">중앙 데이터 브레인</p></div>
-                        <div class="connection-arrow md:w-12 text-2xl">➡</div>
-                        <div class="flex-1 bg-brand-teal text-white p-8 rounded-3xl space-y-4 shadow-xl"><div class="text-4xl">💊</div><h4 class="font-black">약국On</h4><p class="text-[10px] opacity-80 leading-relaxed">약사 전용 관리앱</p></div>
-                        <div class="connection-arrow md:w-12 text-2xl">➡</div>
-                        <div class="flex-1 bg-white border-2 border-brand-coral p-8 rounded-3xl space-y-4 shadow-xl"><div class="text-4xl">💖</div><h4 class="font-black text-brand-coral">단골약국 앱</h4><p class="text-[10px] text-brand-textLight leading-relaxed">소비자 맞춤형</p></div>
-                        <div class="connection-arrow md:w-12 text-2xl">➡</div>
-                        <div class="flex-1 bg-brand-bg border border-slate-200 p-8 rounded-3xl space-y-4 shadow-xl"><div class="text-4xl">🛰</div><h4 class="font-black text-brand-navy">약국Go</h4><p class="text-[10px] text-brand-textLight leading-relaxed">범용 소비자 앱</p></div>
+
+                <!-- O2O Chain Visualization -->
+                <div class="p-10 md:p-16 bg-white rounded-[50px] shadow-card border border-slate-100 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-navy via-brand-teal to-brand-coral"></div>
+                    
+                    <div class="flex flex-col md:flex-row items-stretch gap-2">
+                        
+                        <!-- Block 1: Manager -->
+                        <div class="o2o-step text-center group">
+                            <div class="text-brand-navy font-black text-[10px] mb-2 uppercase tracking-widest">The Core</div>
+                            <div class="w-16 h-16 bg-brand-navy text-white rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">🧠</div>
+                            <h4 class="font-black text-brand-navy text-base mb-1">팜셀매니저</h4>
+                            <p class="text-[10px] text-brand-textLight font-bold leading-tight">웹, 앱 실시간 연동<br>데이터 컨트롤 타워</p>
+                        </div>
+
+                        <div class="o2o-arrow">➡</div>
+
+                        <!-- Block 2: PharmacyOn -->
+                        <div class="o2o-step text-center group">
+                            <div class="text-brand-teal font-black text-[10px] mb-2 uppercase tracking-widest">Management</div>
+                            <div class="w-16 h-16 bg-brand-teal text-white rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">📲</div>
+                            <h4 class="font-black text-brand-teal text-base mb-1">약국On</h4>
+                            <p class="text-[10px] text-brand-textLight font-bold leading-tight">약국관리 전용 앱<br>실시간 매장 컨트롤</p>
+                        </div>
+
+                        <div class="o2o-arrow">➡</div>
+
+                        <!-- Block 3: Regular App -->
+                        <div class="o2o-step text-center group">
+                            <div class="text-brand-coral font-black text-[10px] mb-2 uppercase tracking-widest">Membership</div>
+                            <div class="w-16 h-16 bg-brand-coral text-white rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">💖</div>
+                            <h4 class="font-black text-brand-coral text-base mb-1">단골약국 앱</h4>
+                            <p class="text-[10px] text-brand-textLight font-bold leading-tight">팜셀매니저 연동<br>1:1 소비자 밀착 케어</p>
+                        </div>
+
+                        <div class="o2o-arrow">➡</div>
+
+                        <!-- Block 4: PharmacyGo -->
+                        <div class="o2o-step text-center group">
+                            <div class="text-slate-500 font-black text-[10px] mb-2 uppercase tracking-widest">Discovery</div>
+                            <div class="w-16 h-16 bg-slate-700 text-white rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">🛰️</div>
+                            <h4 class="font-black text-slate-700 text-base mb-1">약국Go</h4>
+                            <p class="text-[10px] text-brand-textLight font-bold leading-tight">약국 범용 앱<br>신규 유입 및 정보 허브</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Summary Impact -->
+                    <div class="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="bg-slate-50 p-8 rounded-[30px] border border-slate-100">
+                            <h5 class="text-xl font-black text-brand-navy mb-4 flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-brand-navy text-white flex items-center justify-center text-xs mr-3">1</span>
+                                실시간 연계의 즉각성
+                            </h5>
+                            <p class="text-sm text-brand-textLight leading-relaxed">
+                                앱과 웹의 실시간 연계를 통해 데이터의 파편화를 막고, 약사는 언제 어디서든 약국 상황을 파악하며 소비자는 필요한 시점에 편리한 약료 서비스를 제공받습니다.
+                            </p>
+                        </div>
+                        <div class="bg-brand-teal/5 p-8 rounded-[30px] border border-brand-teal/10">
+                            <h5 class="text-xl font-black text-brand-teal mb-4 flex items-center">
+                                <span class="w-8 h-8 rounded-full bg-brand-teal text-white flex items-center justify-center text-xs mr-3">2</span>
+                                동네약국 생태계 형성
+                            </h5>
+                            <p class="text-sm text-brand-textLight leading-relaxed">
+                                온라인(App)에서의 편리한 소통과 정보 제공이 오프라인(Offline) 약국 방문으로 이어지는 선순환 구조를 통해, 거대 자본에 밀리지 않는 동네 약국만의 강력한 자생적 생태계를 구축합니다.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
