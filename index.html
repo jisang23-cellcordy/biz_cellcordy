@@ -5,15 +5,15 @@ CONFIRMATIONS AND PLAN:
 - Chosen Palette: "Vibrant Tech & Trust" (Primary: Navy #004A7C, Secondary: Teal #00A99D, Accents: Coral #FF6B6B, Yellow #FFD166, Background: Slate #F8FAFC).
 
 NARRATIVE & STRUCTURE PLAN:
-1. Intro: Vision and Executive Summary (Title: 셀코디가 제시하는 새로운 약국 경영 생태계, Added 4th Pillar: Perfect Pharmacy Partner).
-2. Service (1): OCR, AI DB, CRM App, Knowledge modules (OTC/ETC/Academic).
+1. Intro: Vision and Executive Summary (Title: 셀코디가 제시하는 새로운 약국 경영 생태계, 4 Pillars included).
+2. Service (1): UNIFIED - 6 Core modules (Prescription, Inventory, CRM, Order, Analysis, Exclusive Products) in a single grid.
 3. Tax (2): Data Direct Bridge, 15h vs 3h comparison, 3 Core Values.
 4. Supply/Ads (3): Supply chain & banner ad ecosystem.
 5. Ecology (4): O2O model visualization.
 6. Plan (5): Detailed Quarterly Milestones 2026-2028.
 7. Revenue (6): 70/15/15 ratio and 3 Strategic Highlights.
 8. Goal (7): KPIs for pharmacies (500-2500-5000) and Revenue (20-100-200B) until 2028.
-9. Kiosk (8): Restored detailed Silver care integration.
+9. Kiosk (8): Detailed Silver care integration (Target 100k, AI Consultation, Gov budget).
 10. Organization (9): CellCody organizational structure with CEO & Division Head names.
 -->
 <!DOCTYPE html>
@@ -54,6 +54,8 @@ NARRATIVE & STRUCTURE PLAN:
         .highlight-card { border-left: 5px solid #00A99D; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); border: 1px solid #f1f5f9; border-left-width: 5px; transition: all 0.3s; }
         .highlight-card:hover { transform: translateX(5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         .tag-badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 10px; font-weight: 900; text-transform: uppercase; margin-bottom: 8px; }
+        .service-card { background: white; padding: 1.5rem; rounded-2xl: 1rem; border: 1px solid #f1f5f9; shadow: 0 1px 3px rgba(0,0,0,0.1); transition: all 0.3s; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: #00A99D; }
     </style>
 </head>
 <body class="font-sans">
@@ -106,7 +108,7 @@ NARRATIVE & STRUCTURE PLAN:
         <!-- MAIN CONTENT -->
         <main class="flex-1 overflow-x-hidden" id="content-container">
 
-            <!-- 🏠 INTRO SECTION (UPDATED WITH 4 PILLARS) -->
+            <!-- 🏠 INTRO SECTION -->
             <section id="section-intro" class="p-8 lg:p-16 max-w-6xl mx-auto space-y-16">
                 <header class="space-y-6">
                     <div class="inline-block px-4 py-1 rounded-full bg-brand-navy text-white text-[10px] font-black tracking-widest uppercase">The Digital Transformation</div>
@@ -151,7 +153,7 @@ NARRATIVE & STRUCTURE PLAN:
                         </div>
                     </div>
 
-                    <!-- 4. 완벽한 약국파트너 (ADDED AS REQUESTED) -->
+                    <!-- 4. 완벽한 약국파트너 -->
                     <div class="bg-white rounded-3xl p-10 shadow-card border-t-8 border-brand-yellow flex flex-col md:flex-row-reverse gap-10 items-center transition-all hover:shadow-xl">
                         <div class="md:w-1/3 text-center">
                             <div class="text-6xl mb-6">🤝</div>
@@ -185,43 +187,72 @@ NARRATIVE & STRUCTURE PLAN:
                 </div>
             </section>
 
-            <!-- 🛠 01. SERVICE SECTION -->
+            <!-- 🛠 01. SERVICE SECTION (UNIFIED FORMAT) -->
             <section id="section-service" class="hidden-section p-8 lg:p-16 max-w-6xl mx-auto space-y-16">
                 <div class="space-y-4">
                     <h2 class="text-3xl font-black text-brand-navy">01. 팜셀매니저 솔루션 상세</h2>
-                    <p class="text-brand-text">관리 효율을 넘어 약국 매출을 직접적으로 견인하는 스마트 지식 모듈입니다.</p>
+                    <p class="text-brand-text">약국 경영의 전 과정을 혁신하는 6가지 핵심 디지털 모듈입니다.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md">
-                        <div class="text-2xl mb-3">💾</div>
-                        <h4 class="font-bold text-brand-navy mb-1 text-sm">처방 입력</h4>
-                        <p class="text-[10px] text-brand-textLight">OCR 자동 입력을 통해 바코드와 상관없는 전천후 입력 구현</p>
+
+                <!-- Unified 6-Item Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 1. 처방 입력 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:border-brand-teal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-4xl mb-5">💾</div>
+                        <h4 class="text-lg font-black text-brand-navy mb-3">처방 입력 (OCR)</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">OCR 자동 입력을 통해 바코드 종류에 상관없는 전천후 입력 시스템을 구현하여 정확도를 극대화합니다.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md">
-                        <div class="text-2xl mb-3">📦</div>
-                        <h4 class="font-bold text-brand-navy mb-1 text-sm">재고 관리</h4>
-                        <p class="text-[10px] text-brand-textLight">AI 데이터베이스 기반 실시간 재고 추적 관리</p>
+                    <!-- 2. 재고 관리 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:border-brand-teal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-4xl mb-5">📦</div>
+                        <h4 class="text-lg font-black text-brand-navy mb-3">재고 관리 (AI)</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">AI 데이터베이스에 기반한 지능형 재고 입력 및 실시간 유통기한/적정수량 현황 추적 관리 시스템입니다.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md">
-                        <div class="text-2xl mb-3">🤝</div>
-                        <h4 class="font-bold text-brand-navy mb-1 text-sm">고객 관리</h4>
-                        <p class="text-[10px] text-brand-textLight">약국 전용 앱 연동으로 단골 고객 확보</p>
+                    <!-- 3. 고객 관리 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:border-brand-teal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-4xl mb-5">🤝</div>
+                        <h4 class="text-lg font-black text-brand-navy mb-3">고객 관리 (CRM)</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">소비자용 약국 전용 앱을 통한 맞춤형 건강 정보 제공과 방문 이력 기반의 단골 고객 락인(Lock-in) 전략을 지원합니다.</p>
+                    </div>
+                    <!-- 4. 주문 관리 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:border-brand-teal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-4xl mb-5">🚚</div>
+                        <h4 class="text-lg font-black text-brand-navy mb-3">주문 관리 (SCM)</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">재고 및 판매 데이터의 실시간 분석과 유통 경로 최적화 분석을 통해 주문 편의성과 사입 효율을 극대화합니다.</p>
+                    </div>
+                    <!-- 5. 경영 분석 -->
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm transition-all hover:shadow-lg hover:border-brand-teal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center text-4xl mb-5">📊</div>
+                        <h4 class="text-lg font-black text-brand-navy mb-3">경영 분석 (BI)</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">매출, 매입, 고정 비용 및 순수익의 다각도 분석 리포트를 제공하여 경영진의 올바른 의사결정을 돕습니다.</p>
+                    </div>
+                    <!-- 6. 약국 전용 제품 -->
+                    <div class="bg-brand-bg p-8 rounded-3xl border border-brand-teal/20 shadow-sm transition-all hover:shadow-lg hover:border-brand-teal flex flex-col items-center text-center">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-4xl mb-5">⭐</div>
+                        <h4 class="text-lg font-black text-brand-teal mb-3">약국 전용 PB/OEM</h4>
+                        <p class="text-xs text-brand-textLight leading-relaxed">온라인 제품과 철저히 차별화된 셀코디만의 전용 PB 제품 및 프리미엄 OEM 라인업을 가맹 약국에 독점 공급합니다.</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-                    <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-brand-coral">
-                        <h4 class="text-xl font-bold text-brand-navy mb-4">🛒 OTC 판매정보</h4>
-                        <p class="text-sm text-brand-text leading-relaxed">고마진 제품 추천, 판매 팁, 상담 기술 제공으로 매출 상승 견인</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-brand-navy">
-                        <h4 class="text-xl font-bold text-brand-navy mb-4">🧪 ETC 정보</h4>
-                        <p class="text-sm text-brand-text leading-relaxed">조제 관련 필수 정보 및 전문의약품 최신 소식 실시간 공유</p>
-                    </div>
-                    <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-brand-teal">
-                        <h4 class="text-xl font-bold text-brand-navy mb-4">📖 학술정보</h4>
-                        <p class="text-sm text-brand-text leading-relaxed">셀코디 순환요법, 한방 다이어그램 등 독자적 학술자료 제공</p>
+
+                <!-- 지식 기반 매출 견인 모듈 (Special Content) -->
+                <div class="space-y-6 pt-10">
+                    <h3 class="text-2xl font-black text-brand-navy border-l-4 border-brand-teal pl-4">지식 기반 매출 견인 모듈</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-brand-coral">
+                            <h4 class="text-xl font-bold text-brand-navy mb-4">🛒 OTC 판매정보</h4>
+                            <p class="text-sm text-brand-text leading-relaxed">고마진 제품 추천, 판매 팁, 상담 기술 제공으로 매출 상승 견인</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-brand-navy">
+                            <h4 class="text-xl font-bold text-brand-navy mb-4">🧪 ETC 정보</h4>
+                            <p class="text-sm text-brand-text leading-relaxed">조제 관련 필수 정보 및 전문의약품 최신 소식 실시간 공유</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-md border-t-4 border-brand-teal">
+                            <h4 class="text-xl font-bold text-brand-navy mb-4">📖 학술정보</h4>
+                            <p class="text-sm text-brand-text leading-relaxed">셀코디 순환요법, 한방 다이어그램 등 독자적 학술자료 제공</p>
+                        </div>
                     </div>
                 </div>
+
                 <div class="bg-brand-navy p-10 rounded-3xl text-white mt-12">
                     <h4 class="text-xl font-bold mb-6 text-center text-brand-yellow">솔루션 경쟁력 레이더 분석</h4>
                     <div class="chart-container"><canvas id="serviceRadarChart"></canvas></div>
@@ -239,9 +270,11 @@ NARRATIVE & STRUCTURE PLAN:
                                 팜셀매니저는 세무 파트너에게 <strong>'데이터 다이렉트 브릿지'</strong>를 제공하여 수기 입력 시간을 획기적으로 줄입니다.
                             </p>
                         </div>
-                        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-6">
-                            <div class="w-16 h-16 rounded-full bg-teal-50 flex items-center justify-center text-brand-teal text-xl font-black">80%</div>
-                            <div><h4 class="font-bold text-brand-navy">업무 효율성 향상</h4><p class="text-xs text-brand-textLight">수기 자료 정리 및 증빙 누락 확인 시간 단축</p></div>
+                        <div class="space-y-4">
+                            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex items-center gap-6">
+                                <div class="w-16 h-16 rounded-full bg-teal-50 flex items-center justify-center text-brand-teal text-xl font-black">80%</div>
+                                <div><h4 class="font-bold text-brand-navy">업무 효율성 향상</h4><p class="text-xs text-brand-textLight">수기 자료 정리 및 증빙 누락 확인 시간 단축</p></div>
+                            </div>
                         </div>
                     </div>
                     <div class="md:w-1/2 bg-white p-10 rounded-3xl shadow-card border border-slate-100 flex flex-col items-center">
@@ -455,7 +488,7 @@ NARRATIVE & STRUCTURE PLAN:
                 { x: ['26 상', '26 하', '27 상', '27 하'], y: [10, 40, 60, 150], name: '설치 매출(억)', type: 'bar', marker: { color: '#004A7C' } },
                 { x: ['26 상', '26 하', '27 상', '27 하'], y: [0.5, 2, 5, 12], name: '관리 수익(억)', type: 'scatter', mode: 'lines+markers', marker: { color: '#FF6B6B' } }
             ];
-            const layout = { title: '실버 키오스크 사업 성장 예측', font: { family: 'Noto Sans KR', size: 12 }, margin: { t: 50, b: 50, l: 50, r: 50 }, legend: { orientation: 'h', y: -0.2 } };
+            const layout = { title: '실버 케어 키오스크 사업 성장 예측', font: { family: 'Noto Sans KR', size: 12 }, margin: { t: 50, b: 50, l: 50, r: 50 }, legend: { orientation: 'h', y: -0.2 } };
             Plotly.newPlot('kioskPlotly', data, layout, { responsive: true, displayModeBar: false });
         }
     </script>
